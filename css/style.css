@@ -1,0 +1,101 @@
+/* resetando css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --title-color: #fff;
+    --base-color: #333;
+    --base-color-second:#00ff7f;
+}
+
+/* PLCANDO FLEXBOX */
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* usando variaveis no css */
+    background: var(--base-color);
+
+    /* TRANSFORMANDO "PIXEL-PX" EM "REM" */
+    font-size: 62.5%;
+}
+
+/* TITULO DA BATERIA */
+h1{
+    color: var(--title-color);
+    margin-bottom: 2rem;
+
+}
+
+/* CAIXA PRINCIPAL - keys */
+
+/* APLICANDO UM GRID NO MEU CSS */
+.keys{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.key {
+    width: 8rem; 
+    height: 8rem; 
+    border: 0.2rem solid var(--title-color);
+    color: var(--title-color);
+    /* aplicando o flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; 
+    font-weight: bold;
+  }
+
+  /* EFEITO JAVASCRIPT == FAZER DEPOIS */
+  .key.active{
+      /* fazer dps */
+  }
+  
+  /* CAIXA COMPOSIÇÃO - COMPOSER */
+  .composer{
+      width: 26rem;
+      margin-top: 2rem;
+  }
+
+  .composer #input{
+      width: 100%;
+      outline: none;
+      font-size: 1.7rem;
+      padding: 1rem 1.5rem;
+
+  }
+
+  .composer button{
+      width: 100%;
+      height: 4rem;
+      background: none;
+      border: 0.2rem solid var(--title-color);
+      color: var(--title-color);
+      font-size: 1.5rem;
+      margin-top: 1.4rem;
+      cursor: pointer;
+  }
+
+  .composer button:hover{
+      background-color: black;
+  }
+
+
+  /* RODAPÉ - FOOTER */
+  footer{
+      margin-top: 2rem;
+      color: var(--title-color);
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+  }
